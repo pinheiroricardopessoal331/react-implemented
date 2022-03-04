@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&family=Inconsolata:wght@400;500&family=Montserrat:ital,wght@1,100&family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat', monospace;
+}
+
+.center {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    min-height: 400px;
+    flex-wrap: wrap;
+}
+
+.main {
+    padding: 40px 0;
+    width: 100%;
+    background-color: blueviolet;
+    background-image: url('https://www.visiteosusa.com.br/sites/default/files/styles/16_9_1280x720/public/2016-10/Rocky%20Mt.jpg?itok=qXfNDlyT');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 4px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.menu {
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    max-width: 600px;
+    margin: 10px auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.form h3 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+.items-form {
+    margin: 0 auto;
+    max-width: 540px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.items-form input{
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+.items-form input[type=text]{
+    width: 48%;
+    height: 30px;
+    margin: 8px 0;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.items-form input[placeholder]{
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.items-form input:focus {
+    border: 1px solid black;
+    box-shadow: 0 0 1px 1px white;
+}
+
+.items-form input[type=submit]{
+    color: white;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    background-color:blueviolet
+}
+
+@media screen and (max-width: 768px){
+    .items-form input[type=text]{
+        width: 100%;
+    }
+    
+}
+
+footer{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 24px;
+}
+
+.instagram-button {
+    width: 30px;
+    height: 30px;
+    background: url(./instagram.svg) no-repeat;
+    background-size: 100%;
+    display: block;
+    margin-left: 30px;
+}
+
+footer a {
+    font-size: 18px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: rgb(44, 82, 250);
+    font-weight: bold;
+}
